@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';  // Import your CSS file
+import { Routes } from 'react-router-dom';
 
 export default function App() {
   const [query, setQuery] = useState('');
@@ -29,6 +30,14 @@ export default function App() {
           onChange={(e) => setQuery(e.target.value)}
           className="search-input"
         />
+
+        <button
+  className="findwork-btn"
+  onClick={() => window.location.href = '/login'}
+>
+  🔍 Find Work
+</button>
+
       </div>
 
       <div className="grid">
